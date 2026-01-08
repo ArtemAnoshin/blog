@@ -1,6 +1,6 @@
 <?php
 
-namespace Tests\Feature\Public\Blog;
+namespace Tests\Unit\Public\Blog;
 
 use App\Dtos\Public\Blog\BlogIndexPageDto;
 use App\Http\Controllers\Public\BlogController;
