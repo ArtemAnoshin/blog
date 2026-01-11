@@ -2,11 +2,8 @@
 
 namespace Tests\Unit\Public\Blog;
 
-use App\Dtos\Public\Blog\BlogIndexPageDto;
-use App\Http\Controllers\Public\BlogController;
+use App\Dtos\Public\Blog\BlogIndexPageRequestDto;
 use App\Scenarios\Blog\BuildBlogIndexPageScenario;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Http\Request;
 use Tests\TestCase;
 
 class BuildBlogIndexPageScenarioTest extends TestCase
@@ -14,7 +11,7 @@ class BuildBlogIndexPageScenarioTest extends TestCase
     public function test_scenario_returns_correct_structure(): void
     {
         // Arrange
-        $dto = new BlogIndexPageDto();
+        $dto = new BlogIndexPageRequestDto();
         $scenario = new BuildBlogIndexPageScenario();
 
         // Act
